@@ -6,6 +6,7 @@ export default function Home() {
       <InfoCard
         title="About Me"
         subtitle="“It's hard to talk about yourself.” - Sugar Ray Leonard"
+        pic="car.jpg"
         reverse={false}
         className="w-3/4"
       >
@@ -40,6 +41,7 @@ export default function Home() {
       <InfoCard
         title="Experience"
         subtitle='"We are not what we know but what we are willing to learn." - Mary Catherine Bateson'
+        pic="fly.jpg"
         reverse={true}
         className="w-3/4"
       >
@@ -55,6 +57,7 @@ export default function Home() {
       <InfoCard
         title="Projects"
         subtitle="subtitle"
+        pic="pi.jpg"
         reverse={false}
         className="w-3/4"
       >
@@ -70,6 +73,7 @@ export default function Home() {
       <InfoCard
         title="Contact Me"
         subtitle='"Great communication begins with connection." - Oprah'
+        pic="grad.jpg"
         reverse={true}
         className="w-3/4"
       >
