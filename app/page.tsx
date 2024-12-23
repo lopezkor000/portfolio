@@ -3,6 +3,13 @@ import InfoCard from "@/components/InfoCard";
 export default function Home() {
   return (
     <main className="flex flex-col space-y-20 items-center">
+      <div className="flex space-x-3 items-center w-1/3">
+        <img src="stairway.jpg" className="w-1/5 aspect-square rounded-full" />
+        <div className="w-fill">
+          <p className="font-bold">Koriel Lopez</p>
+          <p className="text-zinc-400">Software Engineer</p>
+        </div>
+      </div>
       <InfoCard
         title="About Me"
         subtitle="“It's hard to talk about yourself.” - Sugar Ray Leonard"
