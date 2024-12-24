@@ -14,9 +14,7 @@ export default function InfoCard(props: Props) {
         props.reverse && "text-right flex-row-reverse"
       } ${props.className}`}
     >
-      <div className="w-1/4">
-        <img src={props.pic} className="w-full aspect-square rounded-lg" />
-      </div>
+      <img src={props.pic} className="size-60 aspect-square rounded-lg" />
       <div className="w-3/4 flex flex-col space-y-3">
         <p className="text-2xl font-bold">{props.title}</p>
         <p className="text-zinc-400">{props.subtitle}</p>
