@@ -1,18 +1,32 @@
-import { PropsWithChildren, ReactNode } from "react";
+"use client";
 
-const NavButton = (props: PropsWithChildren) => {
+interface ButtonProps {
+  text: string;
+}
+
+const NavButton = (props: ButtonProps) => {
+  const scrollToContent = (id: string) => {
+    const node = document.getElementById(id);
+    node?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
-    <button className="bg-zinc-800 w-32 h-8 rounded">{props.children}</button>
+    <button
+      className="bg-zinc-800 w-32 h-8 rounded"
+      onClick={() => scrollToContent(props.text)}
+    >
+      {props.text}
+    </button>
   );
 };
 
 export default function NavBar() {
   return (
     <div className="fixed flex flex-col w-36 h-full rounded-r-lg bg-black space-y-5 pt-5">
-      <NavButton>About Me</NavButton>
-      <NavButton>Experience</NavButton>
-      <NavButton>Projects</NavButton>
-      <NavButton>Contact Me</NavButton>
+      <NavButton text="About Me" />
+      <NavButton text="Experience" />
+      <NavButton text="Projects" />
+      <NavButton text="Contact Me" />
     </div>
   );
 }

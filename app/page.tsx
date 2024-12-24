@@ -11,6 +11,7 @@ export default function Home() {
         </div>
       </div>
       <InfoCard
+        id="About Me"
         title="About Me"
         subtitle="“It's hard to talk about yourself.” - Sugar Ray Leonard"
         pic="car.jpg"
@@ -46,6 +47,7 @@ export default function Home() {
         </p>
       </InfoCard>
       <InfoCard
+        id="Experience"
         title="Experience"
         subtitle='"We are not what we know but what we are willing to learn." - Mary Catherine Bateson'
         pic="fly.jpg"
@@ -62,6 +64,7 @@ export default function Home() {
         laboris adipisicing adipisicing cupidatat.
       </InfoCard>
       <InfoCard
+        id="Projects"
         title="Projects"
         subtitle="subtitle"
         pic="pi.jpg"
@@ -78,6 +81,7 @@ export default function Home() {
         laboris adipisicing adipisicing cupidatat.
       </InfoCard>
       <InfoCard
+        id="Contact Me"
         title="Contact Me"
         subtitle='"Great communication begins with connection." - Oprah'
         pic="grad.jpg"

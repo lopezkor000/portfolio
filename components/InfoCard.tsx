@@ -1,4 +1,5 @@
 interface Props {
+  id: string;
   title: string;
   subtitle?: string;
   pic: string;
@@ -10,6 +11,7 @@ interface Props {
 export default function InfoCard(props: Props) {
   return (
     <div
+      id={props.id}
       className={`flex gap-10 items-start ${
         props.reverse && "text-right flex-row-reverse"
       } ${props.className}`}
