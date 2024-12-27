@@ -89,7 +89,7 @@ export default function Home() {
         className="w-3/4"
       >
         <div className="w-fit flex outline">
-          <div className="w-fit place-items-end p-3 space-y-3">
+          <div className="w-fit place-items-end p-3 space-y-3 font-bold">
             <p>Email</p>
             <p>Phone</p>
             <p>LinkedIn</p>
@@ -100,7 +100,7 @@ export default function Home() {
             <p>+1 (409) 354-7518</p>
             <p>
               <a
-                className="hover:decoration-yellow-200 hover:underline"
+                className="text-yellow-300 hover:text-white hover:decoration-yellow-200 hover:underline"
                 href="https://www.linkedin.com/in/koriel-lopez/"
                 target="_blank"
               >
@@ -109,7 +109,7 @@ export default function Home() {
             </p>
             <p>
               <a
-                className="hover:decoration-yellow-200 hover:underline"
+                className="text-yellow-300 hover:text-white hover:decoration-yellow-200 hover:underline"
                 href="https://www.github.com/lopezkor000"
                 target="_blank"
               >
