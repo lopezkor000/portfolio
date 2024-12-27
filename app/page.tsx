@@ -88,14 +88,36 @@ export default function Home() {
         reverse={true}
         className="w-3/4"
       >
-        Eu aute eiusmod qui non ex ad labore duis do mollit officia non. Ut anim
-        aliqua anim nulla occaecat qui voluptate irure tempor quis tempor
-        nostrud labore. Est consectetur reprehenderit minim commodo aliquip
-        laborum. Laboris mollit dolor id veniam cupidatat eu eu nisi consectetur
-        commodo. Amet ipsum sint sunt reprehenderit qui et laboris eu laborum
-        deserunt nisi id nulla exercitation. Laboris irure ea consequat fugiat
-        laboris non excepteur tempor cillum ipsum qui labore. Ullamco voluptate
-        laboris adipisicing adipisicing cupidatat.
+        <div className="w-fit flex gap-5 outline">
+          <div className="w-fit place-items-end p-3">
+            <p>Email</p>
+            <p>Phone</p>
+            <p>LinkedIn</p>
+            <p>GitHub</p>
+          </div>
+          <div className="w-fit place-items-start p-3">
+            <p>koriellopez03@gmail.com</p>
+            <p>+1 (409) 354-7518</p>
+            <p>
+              <a
+                className="hover:decoration-yellow-200 hover:underline"
+                href="https://www.linkedin.com/in/koriel-lopez/"
+                target="_blank"
+              >
+                koriel-lopez
+              </a>
+            </p>
+            <p>
+              <a
+                className="hover:decoration-yellow-200 hover:underline"
+                href="https://www.github.com/lopezkor000"
+                target="_blank"
+              >
+                lopezkor000
+              </a>
+            </p>
+          </div>
+        </div>
       </InfoCard>
     </main>
   );
