@@ -12,7 +12,7 @@ const NavButton = (props: ButtonProps) => {
 
   return (
     <button
-      className="bg-zinc-800 w-32 h-8 rounded"
+      className="text-yellow-300 bg-zinc-800 w-32 h-8 rounded-e hover:text-white"
       onClick={() => scrollToContent(props.text)}
     >
       {props.text}
