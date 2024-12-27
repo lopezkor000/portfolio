@@ -88,14 +88,14 @@ export default function Home() {
         reverse={true}
         className="w-3/4"
       >
-        <div className="w-fit flex gap-5 outline">
-          <div className="w-fit place-items-end p-3">
+        <div className="w-fit flex outline">
+          <div className="w-fit place-items-end p-3 space-y-3">
             <p>Email</p>
             <p>Phone</p>
             <p>LinkedIn</p>
             <p>GitHub</p>
           </div>
-          <div className="w-fit place-items-start p-3">
+          <div className="w-fit place-items-start p-3 space-y-3">
             <p>koriellopez03@gmail.com</p>
             <p>+1 (409) 354-7518</p>
             <p>
