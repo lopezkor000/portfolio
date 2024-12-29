@@ -9,7 +9,7 @@ export function ExperienceList(props: ProjectProps) {
       <p className="underline">{props.title}</p>
       <ul>
         {props.items.map((item) => (
-          <li>{item}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </div>
