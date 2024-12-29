@@ -99,134 +99,47 @@ export default function Home() {
           </div>
         </ExperienceCard>
         <ExperienceCard
-          position="Software Engineer Intern"
-          where="Pacific Northwest National Laboratory"
-          when="Aug 2023 - Nov 2024"
+          position="School of Medicine - Work Study"
+          where="University of Texas Rio Grande Valley"
+          when="Jun 2024 - Aug 2024"
           reverse={true}
-          skills={[
-            "React",
-            "API Design",
-            "App Testing",
-            "Version Control",
-            "JavaScript",
-            "TypeScript",
-            "CI/CD Pipelines",
-            "Docker",
-            "Linux",
-          ]}
-        >
-          <div className="flex flex-col gap-5 py-5">
-            <ExperienceList
-              title="Data Next"
-              items={[
-                "created site components for the frontend using ReactJS",
-                "made an easy to use control center for researchers to manage projects and data",
-                "designed RESTful API using OpenAPI Specification in Python",
-                "connected these two components together, making a functional site for researchers and scientists",
-              ]}
-            />
-            <ExperienceList
-              title="DataHub"
-              items={[
-                "used Cypress with JavaScript to create unit and integration tests for site quality assurance",
-              ]}
-            />
-            <ExperienceList
-              title="Other"
-              items={[
-                "learned how to work with Ansible to manage developer sites",
-                "created pipelines in GitLab to test and create GitLab pages for web developing",
-                "used tools like Insomnia, Docker, and WSL for projects",
-              ]}
-            />
-          </div>
-        </ExperienceCard>
+          skills={[]}
+        ></ExperienceCard>
         <ExperienceCard
-          position="Software Engineer Intern"
-          where="Pacific Northwest National Laboratory"
-          when="Aug 2023 - Nov 2024"
+          position="Web Development - Teacher Assistant"
+          where="University of Texas Rio Grande Valley"
+          when="Jan 2025 - May 2025"
           reverse={true}
-          skills={[
-            "React",
-            "API Design",
-            "App Testing",
-            "Version Control",
-            "JavaScript",
-            "TypeScript",
-            "CI/CD Pipelines",
-            "Docker",
-            "Linux",
-          ]}
-        >
-          <div className="flex flex-col gap-5 py-5">
-            <ExperienceList
-              title="Data Next"
-              items={[
-                "created site components for the frontend using ReactJS",
-                "made an easy to use control center for researchers to manage projects and data",
-                "designed RESTful API using OpenAPI Specification in Python",
-                "connected these two components together, making a functional site for researchers and scientists",
-              ]}
-            />
-            <ExperienceList
-              title="DataHub"
-              items={[
-                "used Cypress with JavaScript to create unit and integration tests for site quality assurance",
-              ]}
-            />
-            <ExperienceList
-              title="Other"
-              items={[
-                "learned how to work with Ansible to manage developer sites",
-                "created pipelines in GitLab to test and create GitLab pages for web developing",
-                "used tools like Insomnia, Docker, and WSL for projects",
-              ]}
-            />
-          </div>
-        </ExperienceCard>
+          skills={[]}
+        ></ExperienceCard>
         <ExperienceCard
-          position="Software Engineer Intern"
-          where="Pacific Northwest National Laboratory"
-          when="Aug 2023 - Nov 2024"
+          position="Physics - Supplemental Instructor"
+          where="Galveston College - STEM Honors"
+          when="Nov 2022 - Aug 2023"
           reverse={true}
-          skills={[
-            "React",
-            "API Design",
-            "App Testing",
-            "Version Control",
-            "JavaScript",
-            "TypeScript",
-            "CI/CD Pipelines",
-            "Docker",
-            "Linux",
-          ]}
-        >
-          <div className="flex flex-col gap-5 py-5">
-            <ExperienceList
-              title="Data Next"
-              items={[
-                "created site components for the frontend using ReactJS",
-                "made an easy to use control center for researchers to manage projects and data",
-                "designed RESTful API using OpenAPI Specification in Python",
-                "connected these two components together, making a functional site for researchers and scientists",
-              ]}
-            />
-            <ExperienceList
-              title="DataHub"
-              items={[
-                "used Cypress with JavaScript to create unit and integration tests for site quality assurance",
-              ]}
-            />
-            <ExperienceList
-              title="Other"
-              items={[
-                "learned how to work with Ansible to manage developer sites",
-                "created pipelines in GitLab to test and create GitLab pages for web developing",
-                "used tools like Insomnia, Docker, and WSL for projects",
-              ]}
-            />
-          </div>
-        </ExperienceCard>
+          skills={[]}
+        ></ExperienceCard>
+        <ExperienceCard
+          position="Camp Counselor - Engineering"
+          where="Galveston College - Summer Kids Camp"
+          when="Jun 2023 - Jul 2023"
+          reverse={true}
+          skills={[]}
+        ></ExperienceCard>
+        <ExperienceCard
+          position="Customer Service Representative"
+          where="Galveston College - Bookstore"
+          when="Jan 2023 - Aug 2023"
+          reverse={true}
+          skills={[]}
+        ></ExperienceCard>
+        <ExperienceCard
+          position="Customer Service Representative"
+          where="Circle K"
+          when="Jan 2022 - Jul 2022"
+          reverse={true}
+          skills={[]}
+        ></ExperienceCard>
       </InfoCard>
       <InfoCard
         id="Projects"

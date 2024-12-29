@@ -22,7 +22,7 @@ interface ExperienceProps {
   when: string;
   skills: string[];
   reverse: boolean;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export default function ExperienceCard(props: ExperienceProps) {
