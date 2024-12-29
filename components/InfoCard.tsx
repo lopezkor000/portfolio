@@ -21,7 +21,7 @@ export default function InfoCard(props: Props) {
         <p className="text-2xl font-bold">{props.title}</p>
         <p className="text-zinc-400">{props.subtitle}</p>
         <div
-          className={`flex flex-col space-y-3 ${
+          className={`flex flex-col space-y-20 ${
             props.reverse && "place-items-end"
           }`}
         >
