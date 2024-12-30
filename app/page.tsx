@@ -52,14 +52,14 @@ export default function Home() {
         title="Experience"
         subtitle='"We are not what we know but what we are willing to learn." - Mary Catherine Bateson'
         pic="fly.jpg"
-        reverse={true}
+        reverse={false}
         className="w-3/4"
       >
         <ExperienceCard
           position="Software Engineer Intern"
           where="Pacific Northwest National Laboratory"
           when="Aug 2023 - Nov 2024"
-          reverse={true}
+          reverse={false}
           skills={[
             "React",
             "API Design",
@@ -102,42 +102,42 @@ export default function Home() {
           position="School of Medicine - Work Study"
           where="University of Texas Rio Grande Valley"
           when="Jun 2024 - Aug 2024"
-          reverse={true}
+          reverse={false}
           skills={[]}
         ></ExperienceCard>
         <ExperienceCard
           position="Web Development - Teacher Assistant"
           where="University of Texas Rio Grande Valley"
           when="Jan 2025 - May 2025"
-          reverse={true}
+          reverse={false}
           skills={[]}
         ></ExperienceCard>
         <ExperienceCard
           position="Physics - Supplemental Instructor"
           where="Galveston College - STEM Honors"
           when="Nov 2022 - Aug 2023"
-          reverse={true}
+          reverse={false}
           skills={[]}
         ></ExperienceCard>
         <ExperienceCard
           position="Camp Counselor - Engineering"
           where="Galveston College - Summer Kids Camp"
           when="Jun 2023 - Jul 2023"
-          reverse={true}
+          reverse={false}
           skills={[]}
         ></ExperienceCard>
         <ExperienceCard
           position="Customer Service Representative"
           where="Galveston College - Bookstore"
           when="Jan 2023 - Aug 2023"
-          reverse={true}
+          reverse={false}
           skills={[]}
         ></ExperienceCard>
         <ExperienceCard
           position="Customer Service Representative"
           where="Circle K"
           when="Jan 2022 - Jul 2022"
-          reverse={true}
+          reverse={false}
           skills={[]}
         ></ExperienceCard>
       </InfoCard>
@@ -163,7 +163,7 @@ export default function Home() {
         title="Contact Me"
         subtitle='"Great communication begins with connection." - Oprah'
         pic="grad.jpg"
-        reverse={true}
+        reverse={false}
         className="w-3/4"
       >
         <div className="w-fit flex outline">

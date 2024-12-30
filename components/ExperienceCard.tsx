@@ -27,7 +27,9 @@ interface ExperienceProps {
 
 export default function ExperienceCard(props: ExperienceProps) {
   return (
-    <div className={`flex flex-col ${props.reverse && "flex-row-reverse"}`}>
+    <div
+      className={`flex flex-col pb-5 ${props.reverse && "flex-row-reverse"}`}
+    >
       <div>
         <div className="font-bold text-xl">{props.position}</div>
         <div className="text-bold">{props.where}</div>
