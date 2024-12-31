@@ -72,39 +72,70 @@ export default function Home() {
             "Linux",
           ]}
         >
-          <div className="flex flex-col gap-5 py-5">
-            <ExperienceList
-              title="Data Next"
-              items={[
-                "created site components for the frontend using ReactJS",
-                "made an easy to use control center for researchers to manage projects and data",
-                "designed RESTful API using OpenAPI Specification in Python",
-                "connected these two components together, making a functional site for researchers and scientists",
-              ]}
-            />
-            <ExperienceList
-              title="DataHub"
-              items={[
-                "used Cypress with JavaScript to create unit and integration tests for site quality assurance",
-              ]}
-            />
-            <ExperienceList
-              title="Other"
-              items={[
-                "learned how to work with Ansible to manage developer sites",
-                "created pipelines in GitLab to test and create GitLab pages for web developing",
-                "used tools like Insomnia, Docker, and WSL for projects",
-              ]}
-            />
-          </div>
+          <ExperienceList
+            title="Data Next"
+            items={[
+              "created site components for the frontend using ReactJS",
+              "made an easy to use control center for researchers to manage projects and data",
+              "designed RESTful API using OpenAPI Specification in Python",
+              "connected these two components together, making a functional site for researchers and scientists",
+            ]}
+          />
+          <ExperienceList
+            title="DataHub"
+            items={[
+              "used Cypress with JavaScript to create unit and integration tests for site quality assurance",
+            ]}
+          />
+          <ExperienceList
+            title="Other"
+            items={[
+              "learned how to work with Ansible to manage developer sites",
+              "created pipelines in GitLab to test and create GitLab pages for web developing",
+              "used tools like Insomnia, Docker, and WSL for projects",
+            ]}
+          />
         </ExperienceCard>
         <ExperienceCard
           position="School of Medicine - Work Study"
           where="University of Texas Rio Grande Valley"
           when="Jun 2024 - Aug 2024"
           reverse={false}
-          skills={[]}
-        ></ExperienceCard>
+          skills={[
+            "UX/UI Design",
+            "API Data Fetching",
+            "Reverse Engineering",
+            "Python",
+            "Log Generation",
+            "AGILE Principles",
+          ]}
+        >
+          <p>
+            Here my main job was to assist in making sure there weren't any
+            errors or missing information within the learning outcomes database.
+            When this incorrect information is found, it would be my job to find
+            it within course syllabi to correct it.
+          </p>
+          <p>
+            Now the problem I encountered was how tedious and repetitive
+            accomplishing the above was. Every time it would take at least 3-4
+            clicks to even check if something was missing alone. Imagine doing
+            this 100 times more just for a single course or even a module, that
+            amount of time adds up.
+          </p>
+          <p>
+            To solve this, I researched into One45 (the database software the
+            school was using) and found an API I could hit. Once getting access
+            from our admin, I investigated the structure of our data to map out
+            their relationships and how I can leverage the API to reach them.
+            The end result of this investigation resulted in a python script
+            that could generate gap reports. To make this script accessible to
+            users not familiar with programming, I created a UI and packaged it
+            as an executable. Throughout the UI design process and creating its
+            functionality, I consulted my clients in short sprints to ensure it
+            would be what they needed to improve efficiency.
+          </p>
+        </ExperienceCard>
         <ExperienceCard
           position="Web Development - Teacher Assistant"
           where="University of Texas Rio Grande Valley"
