@@ -28,14 +28,16 @@ interface ExperienceProps {
 export default function ExperienceCard(props: ExperienceProps) {
   return (
     <div
-      className={`flex flex-col pb-5 ${props.reverse && "flex-row-reverse"}`}
+      className={`flex flex-col pb-20 gap-10 ${
+        props.reverse && "flex-row-reverse"
+      }`}
     >
       <div>
         <div className="font-bold text-xl">{props.position}</div>
         <div className="text-bold">{props.where}</div>
         <div className="text-bold">{props.when}</div>
       </div>
-      <div>{props.children}</div>
+      <div className="flex flex-col gap-5">{props.children}</div>
       <div className="columns-3 text-center">
         {props.skills.map((skill) => (
           <p key={skill}>{skill}</p>
