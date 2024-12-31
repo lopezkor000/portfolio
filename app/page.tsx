@@ -142,7 +142,11 @@ export default function Home() {
           when="Jan 2025 - May 2025"
           reverse={false}
           skills={[]}
-        ></ExperienceCard>
+        >
+          <p className="text-xl italic text-zinc-400">
+            ~ CURRENTLY IN PROGRESS ~
+          </p>
+        </ExperienceCard>
         <ExperienceCard
           position="Physics - Supplemental Instructor"
           where="Galveston College - STEM Honors"
