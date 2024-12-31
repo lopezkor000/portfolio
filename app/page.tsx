@@ -166,15 +166,51 @@ export default function Home() {
           where="Galveston College - Bookstore"
           when="Jan 2023 - Aug 2023"
           reverse={false}
-          skills={[]}
-        ></ExperienceCard>
+          skills={[
+            "Customer Service",
+            "Communication",
+            "Organization",
+            "Problem Solving",
+            "Independence",
+            "Teamwork",
+          ]}
+        >
+          <ExperienceList
+            title=""
+            items={[
+              "Helped students with their needs",
+              "Helped cover shifts when needed",
+              "Cleaned store regularly",
+              "Cashiered on weekends",
+              "Kept up with stock",
+            ]}
+          />
+        </ExperienceCard>
         <ExperienceCard
           position="Customer Service Representative"
           where="Circle K"
           when="Jan 2022 - Jul 2022"
           reverse={false}
-          skills={[]}
-        ></ExperienceCard>
+          skills={[
+            "Customer Service",
+            "Communication",
+            "Organization",
+            "Problem Solving",
+            "Independence",
+            "Teamwork",
+          ]}
+        >
+          <ExperienceList
+            title=""
+            items={[
+              "Helped cover shifts when needed",
+              "Entrusted with store alone",
+              "Cleaned store regularly",
+              "Cashiered on weekends",
+              "Kept up with stock",
+            ]}
+          />
+        </ExperienceCard>
       </InfoCard>
       <InfoCard
         id="Projects"
