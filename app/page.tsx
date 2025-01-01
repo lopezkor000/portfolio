@@ -4,7 +4,7 @@ import InfoCard from "@/components/InfoCard";
 export default function Home() {
   return (
     <main className="flex flex-col space-y-20 items-center">
-      <div className="flex space-x-3 items-center">
+      <div className="fixed flex space-x-3 items-center bg-zinc-900 p-3 rounded-lg">
         <img src="stairway.jpg" className="w-10 h-10 rounded-full" />
         <div>
           <p className="font-bold">Koriel Lopez</p>
