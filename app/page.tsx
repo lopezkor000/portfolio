@@ -234,14 +234,19 @@ export default function Home() {
         reverse={false}
         className="w-3/4"
       >
-        Eu aute eiusmod qui non ex ad labore duis do mollit officia non. Ut anim
-        aliqua anim nulla occaecat qui voluptate irure tempor quis tempor
-        nostrud labore. Est consectetur reprehenderit minim commodo aliquip
-        laborum. Laboris mollit dolor id veniam cupidatat eu eu nisi consectetur
-        commodo. Amet ipsum sint sunt reprehenderit qui et laboris eu laborum
-        deserunt nisi id nulla exercitation. Laboris irure ea consequat fugiat
-        laboris non excepteur tempor cillum ipsum qui labore. Ullamco voluptate
-        laboris adipisicing adipisicing cupidatat.
+        <ExperienceList
+          items={[
+            "Pi VPN",
+            "Pi NAS",
+            "Portfolio Website",
+            "Minesweeper",
+            "One45 Reporter",
+            "Discord Bot",
+            "Web Dev Projects",
+            "Software Engineering Projects",
+            "Senior Project",
+          ]}
+        />
       </InfoCard>
       <InfoCard
         id="Contact Me"
