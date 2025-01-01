@@ -7,7 +7,7 @@ interface ButtonProps {
 const NavButton = (props: ButtonProps) => {
   const scrollToContent = (id: string) => {
     const node = document.getElementById(id);
-    node?.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.scroll({ top: node ? node.offsetTop - 100 : 0, behavior: "smooth" });
   };
 
   return (
