@@ -152,8 +152,17 @@ export default function Home() {
           where="Galveston College - STEM Honors"
           when="Nov 2022 - Aug 2023"
           reverse={false}
-          skills={[]}
-        ></ExperienceCard>
+          skills={["Communication", "Problem Solving", "Teamwork"]}
+        >
+          <ExperienceList
+            title=""
+            items={[
+              "Broke down problems into understandable parts",
+              "Kept up with student's content by meeting with their professor regularly",
+              "Considered student availability to accommodate meeting times",
+            ]}
+          />
+        </ExperienceCard>
         <ExperienceCard
           position="Camp Counselor - Engineering"
           where="Galveston College - Summer Kids Camp"
