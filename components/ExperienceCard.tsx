@@ -1,5 +1,5 @@
 interface ProjectProps {
-  title: string;
+  title?: string;
   items: string[];
 }
 

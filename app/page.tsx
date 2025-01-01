@@ -155,7 +155,6 @@ export default function Home() {
           skills={["Communication", "Problem Solving", "Teamwork"]}
         >
           <ExperienceList
-            title=""
             items={[
               "Broke down problems into understandable parts",
               "Kept up with student's content by meeting with their professor regularly",
@@ -168,8 +167,16 @@ export default function Home() {
           where="Galveston College - Summer Kids Camp"
           when="Jun 2023 - Jul 2023"
           reverse={false}
-          skills={[]}
-        ></ExperienceCard>
+          skills={["Curriculum Planning", "Project Research", "Management"]}
+        >
+          <ExperienceList
+            items={[
+              "Taught all ages of kids what it means to be an engineer and what paths exist",
+              "We participated in planned projects for fun and to learn",
+              "Managed a classroom on my own for a 2 week program",
+            ]}
+          />
+        </ExperienceCard>
         <ExperienceCard
           position="Customer Service Representative"
           where="Galveston College - Bookstore"
@@ -185,7 +192,6 @@ export default function Home() {
           ]}
         >
           <ExperienceList
-            title=""
             items={[
               "Helped students with their needs",
               "Helped cover shifts when needed",
@@ -210,7 +216,6 @@ export default function Home() {
           ]}
         >
           <ExperienceList
-            title=""
             items={[
               "Helped cover shifts when needed",
               "Entrusted with store alone",
