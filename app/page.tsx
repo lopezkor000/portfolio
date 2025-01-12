@@ -1,5 +1,6 @@
 import ExperienceCard, { ExperienceList } from "@/components/ExperienceCard";
 import InfoCard from "@/components/InfoCard";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
   return (
@@ -229,14 +230,13 @@ export default function Home() {
       <InfoCard
         id="Projects"
         title="Projects"
-        subtitle="subtitle"
+        subtitle='"How does a project get to be a year late? One day at a time." - Fred Brooks'
         pic="pi.jpg"
         reverse={false}
         className="w-3/4"
       >
-        <ExperienceList
+        {/* <ExperienceList
           items={[
-            "Pi VPN",
             "Pi NAS",
             "Portfolio Website",
             "Minesweeper",
@@ -246,7 +246,22 @@ export default function Home() {
             "Software Engineering Projects",
             "Senior Project",
           ]}
+        /> */}
+        <ProjectCard
+          title="NAS"
+          purp="Keep personal device storages clear while sharing files. This helps keep projects and important files accessible from anywhere when working with my Pi VPN."
+          impl="This project uses Samba to manage a 1TB HDD attached to my Pi. With this protocol I can expose this port to my home network to access this storage from any device."
+          learn={["Linux", "SSH", "SMB"]}
         />
+        <ProjectCard
+          title="Pi VPN"
+          purp="A Virtual Private Network that helps connect to my devices from anywhere. It also provides me a quick and secure way to be on public WiFi through encryption and sending packets using UDP"
+          impl="Using a Raspberry Pi board, I installed PiVPN with a Wireguard configuration. After this, I just needed to keep a consistent IP address and port forward the server through my ISP's router. Once I've shared keys with trusted devices, I could now connect to my home lab from anywhere."
+          learn={["Linux", "SSH", "Router Config"]}
+        />
+        <p className="text-xl italic text-zinc-400">
+          More updates coming soon! Come back soon for more ;)
+        </p>
       </InfoCard>
       <InfoCard
         id="Contact Me"
