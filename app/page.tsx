@@ -1,6 +1,7 @@
 import ExperienceCard, { ExperienceList } from "@/components/ExperienceCard";
 import InfoCard from "@/components/InfoCard";
 import ProjectCard from "@/components/ProjectCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -56,6 +57,13 @@ export default function Home() {
         reverse={false}
         className="w-3/4"
       >
+        <Link
+          href="/resume.pdf"
+          target="_blank"
+          className="text-yellow-300 hover:text-white"
+        >
+          PDF Resume
+        </Link>
         <ExperienceCard
           position="Software Engineer Intern"
           where="Pacific Northwest National Laboratory"
