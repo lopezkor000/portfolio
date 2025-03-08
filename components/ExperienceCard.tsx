@@ -1,7 +1,3 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 interface ProjectProps {
   title?: string;
   items: string[];
@@ -25,25 +21,24 @@ interface ExperienceProps {
   where: string;
   when: string;
   skills: string[];
+  reverse: boolean;
   children?: React.ReactNode;
 }
 
 export default function ExperienceCard(props: ExperienceProps) {
-  let [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, [setWidth]);
-
   return (
-    <div className="flex flex-col pb-20 gap-10">
+    <div
+      className={`flex flex-col pb-20 gap-10 ${
+        props.reverse && "flex-row-reverse"
+      }`}
+    >
       <div>
         <div className="font-bold text-xl">{props.position}</div>
         <div className="text-bold">{props.where}</div>
         <div className="text-bold">{props.when}</div>
       </div>
       <div className="flex flex-col gap-5">{props.children}</div>
-      <div className={`${width < 500 ? "columns-2" : "columns-3"} text-center`}>
+      <div className="columns-3 text-center">
         {props.skills.map((skill) => (
           <p key={skill}>{skill}</p>
         ))}
