@@ -57,13 +57,15 @@ export default function Home() {
         reverse={false}
         className="w-3/4"
       >
-        <Link
-          href="/resume.pdf"
-          target="_blank"
-          className="text-yellow-300 hover:text-white"
-        >
-          PDF Resume
-        </Link>
+        <div>
+          <Link
+            href="/resume.pdf"
+            target="_blank"
+            className="text-yellow-300 hover:text-white"
+          >
+            PDF Resume
+          </Link>
+        </div>
         <ExperienceCard
           position="Software Engineer Intern"
           where="Pacific Northwest National Laboratory"
