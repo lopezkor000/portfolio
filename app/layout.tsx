@@ -4,8 +4,6 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import { HomePage } from "./HomePage";
 
-export const dynamic = "force-dynamic";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
