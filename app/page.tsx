@@ -3,6 +3,8 @@ import InfoCard from "@/components/InfoCard";
 import ProjectCard from "@/components/ProjectCard";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return (
     <main className="flex flex-col space-y-20 items-center">
