@@ -18,8 +18,6 @@ export default function Home() {
         title="About Me"
         subtitle="“It's hard to talk about yourself.” - Sugar Ray Leonard"
         pic="car.jpg"
-        reverse={false}
-        className="w-3/4"
       >
         <p>
           Was born and raised on Galveston Island, Texas into a Hispanic
@@ -54,8 +52,6 @@ export default function Home() {
         title="Experience"
         subtitle='"We are not what we know but what we are willing to learn." - Mary Catherine Bateson'
         pic="fly.jpg"
-        reverse={false}
-        className="w-3/4"
       >
         <div>
           <Link
@@ -70,7 +66,6 @@ export default function Home() {
           position="Software Engineer Intern"
           where="Pacific Northwest National Laboratory"
           when="Aug 2023 - Nov 2024"
-          reverse={false}
           skills={[
             "React",
             "API Design",
@@ -111,7 +106,6 @@ export default function Home() {
           position="School of Medicine - Work Study"
           where="University of Texas Rio Grande Valley"
           when="Jun 2024 - Aug 2024"
-          reverse={false}
           skills={[
             "UX/UI Design",
             "API Data Fetching",
@@ -151,7 +145,6 @@ export default function Home() {
           position="Web Development - Teacher Assistant"
           where="University of Texas Rio Grande Valley"
           when="Jan 2025 - May 2025"
-          reverse={false}
           skills={[]}
         >
           <p className="text-xl italic text-zinc-400">
@@ -162,7 +155,6 @@ export default function Home() {
           position="Physics - Supplemental Instructor"
           where="Galveston College - STEM Honors"
           when="Nov 2022 - Aug 2023"
-          reverse={false}
           skills={["Communication", "Problem Solving", "Teamwork"]}
         >
           <ExperienceList
@@ -177,7 +169,6 @@ export default function Home() {
           position="Camp Counselor - Engineering"
           where="Galveston College - Summer Kids Camp"
           when="Jun 2023 - Jul 2023"
-          reverse={false}
           skills={["Curriculum Planning", "Project Research", "Management"]}
         >
           <ExperienceList
@@ -192,7 +183,6 @@ export default function Home() {
           position="Customer Service Representative"
           where="Galveston College - Bookstore"
           when="Jan 2023 - Aug 2023"
-          reverse={false}
           skills={[
             "Customer Service",
             "Communication",
@@ -216,7 +206,6 @@ export default function Home() {
           position="Customer Service Representative"
           where="Circle K"
           when="Jan 2022 - Jul 2022"
-          reverse={false}
           skills={[
             "Customer Service",
             "Communication",
@@ -242,8 +231,6 @@ export default function Home() {
         title="Projects"
         subtitle='"How does a project get to be a year late? One day at a time." - Fred Brooks'
         pic="pi.jpg"
-        reverse={false}
-        className="w-3/4"
       >
         {/* <ExperienceList
           items={[
@@ -278,8 +265,6 @@ export default function Home() {
         title="Contact Me"
         subtitle='"Great communication begins with connection." - Oprah'
         pic="grad.jpg"
-        reverse={false}
-        className="w-3/4"
       >
         <div className="w-fit flex outline">
           <div className="w-fit place-items-end p-3 space-y-3 font-bold">

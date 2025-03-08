@@ -22,7 +22,11 @@ const NavButton = (props: ButtonProps) => {
 
 export default function NavBar() {
   return (
-    <div className="fixed flex flex-col w-36 h-full rounded-r-lg bg-black space-y-5 pt-5">
+    <div
+      className={`fixed flex flex-col w-36 h-full rounded-r-lg bg-black space-y-5 pt-5 ${
+        window.innerWidth < 500 && "hidden"
+      }`}
+    >
       <NavButton text="About Me" />
       <NavButton text="Experience" />
       <NavButton text="Projects" />
