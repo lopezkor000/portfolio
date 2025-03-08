@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 interface ButtonProps {
   text: string;
 }
@@ -21,8 +23,18 @@ const NavButton = (props: ButtonProps) => {
 };
 
 export default function NavBar() {
+  let [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, [setWidth]);
+
   return (
-    <div className="fixed flex flex-col w-36 h-full rounded-r-lg bg-black space-y-5 pt-5">
+    <div
+      className={`fixed flex flex-col w-36 h-full rounded-r-lg bg-black space-y-5 pt-5 ${
+        width < 500 && "hidden"
+      }`}
+    >
       <NavButton text="About Me" />
       <NavButton text="Experience" />
       <NavButton text="Projects" />
