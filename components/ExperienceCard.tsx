@@ -13,7 +13,9 @@ export function ExperienceList(props: ProjectProps) {
       <p className="underline">{props.title}</p>
       <ul>
         {props.items.map((item) => (
-          <li key={item}>{item}</li>
+          <li key={item}>
+            <p>{item}</p>
+          </li>
         ))}
       </ul>
     </div>
@@ -38,9 +40,15 @@ export default function ExperienceCard(props: ExperienceProps) {
   return (
     <div className="flex flex-col pb-20 gap-10">
       <div>
-        <div className="font-bold text-xl">{props.position}</div>
-        <div className="text-bold">{props.where}</div>
-        <div className="text-bold">{props.when}</div>
+        <div className="font-bold text-xl">
+          <p>{props.position}</p>
+        </div>
+        <div className="text-bold">
+          <p>{props.where}</p>
+        </div>
+        <div className="text-bold">
+          <p>{props.when}</p>
+        </div>
       </div>
       <div className="flex flex-col gap-5">{props.children}</div>
       <div className={`${width < 500 ? "columns-2" : "columns-3"} text-center`}>
