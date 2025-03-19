@@ -17,6 +17,11 @@ passTag.submit()
 driver.get('https://www.linkedin.com/in/koriel-lopez/details/experience/')
 soup = BeautifulSoup(driver.page_source, 'html.parser')
 experiences = soup.find_all('li', attrs={'class': ["pvs-list__paged-list-item", "artdeco-list__item pvs-list__item--line-separated","pvs-list__item--one-column"]})
-print(experiences)
+# print(len(experiences))
+
+with open('data/experiences.html', 'w') as file:
+  for exp in experiences:
+    # print(str(exp.prettify())+'\n')
+    file.write(str(exp.prettify())+'\n')
 
 driver.close()
