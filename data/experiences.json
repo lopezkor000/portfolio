@@ -1,0 +1,164 @@
+{
+    "0": [
+        "Software Engineer Intern",
+        [
+            "Pacific Northwest National Laboratory",
+            "Internship"
+        ],
+        [
+            "Aug 2023 - Nov 2024",
+            "1 yr 4 mos"
+        ],
+        [
+            "Richland, Washington, United States",
+            "Remote"
+        ],
+        "NEXT Datahub",
+        "- created site components for the frontend using ReactJS",
+        "- made an easy to use control center for researchers to manage projects and data",
+        "- designed RESTful API using OpenAPI Specification in Python",
+        "- connected these two components together, making a functional site for researchers and scientists",
+        "Datahub",
+        "- used Cypress with JavaScript to create unit and integration tests for site quality assurance",
+        "Other",
+        "- learned how to work with Ansible to manage developer sites",
+        "- created pipelines in GitLab to test and create GitLab pages for web developing",
+        "- used tools like Insomnia, Docker, and WSL for projects",
+        "Skills:",
+        [
+            "React.js",
+            "OpenAPI Specification (OAS)",
+            "Cypress",
+            "Web Testing",
+            "JavaScript",
+            "Gitlab"
+        ]
+    ],
+    "1": [
+        "Work Study Student",
+        [
+            "The University of Texas Rio Grande Valley",
+            "Part-time"
+        ],
+        [
+            "Jun 2024 - Aug 2024",
+            "3 mos"
+        ],
+        [
+            "Edinburg, Texas, United States",
+            "On-site"
+        ],
+        "Report Generating GUI",
+        "- created easy to use interface",
+        "- automates curriculum mapping tasks",
+        "- uses RESTful methods to grab info from One45",
+        "Curriculum Mapping",
+        "- assisted in mapping student learning outcomes to course outcomes",
+        "- quality assurance, making sure outcomes were mapped correctly",
+        "- helps keep school of medicine's accreditation",
+        "Skills:",
+        [
+            "REST APIs",
+            "Graphical User Interface (GUI)",
+            "Microsoft Products",
+            "Clerical Skills",
+            "Curriculum Mapping"
+        ]
+    ],
+    "2": [
+        "Physics Tutor",
+        [
+            "Galveston College",
+            "Part-time"
+        ],
+        [
+            "Nov 2022 - Aug 2023",
+            "10 mos"
+        ],
+        "Galveston, Texas, United States",
+        "Skills:",
+        [
+            "Time Management",
+            "Tutoring",
+            "Organization Skills"
+        ]
+    ],
+    "3": [
+        "Fitness Instructor",
+        [
+            "Polio's Taekwondo",
+            "Part-time"
+        ],
+        [
+            "Aug 2017 - Aug 2023",
+            "6 yrs 1 mo"
+        ],
+        [
+            "Galveston, Texas, United States",
+            "On-site"
+        ],
+        "Practitioner and instructor to amazing kids. Working on Poomsae to sparring, we push to be the best we can be.",
+        "Skills:",
+        [
+            "Personal Training",
+            "Martial Arts Black Belt",
+            "Sports Coaching",
+            "Coaching",
+            "Martial Arts Instruction",
+            "Sports",
+            "Fitness",
+            "Fitness Training",
+            "Leadership",
+            "Martial Arts",
+            "Taekwondo",
+            "Fitness Instruction"
+        ]
+    ],
+    "4": [
+        "Cashier",
+        [
+            "Texas College Bookstore",
+            "Part-time"
+        ],
+        [
+            "Jan 2023 - Jun 2023",
+            "6 mos"
+        ],
+        [
+            "Galveston, Texas, United States",
+            "On-site"
+        ],
+        "Helping bright students find what they're looking for whether that would be supplies or books for their courses.",
+        "Skills:",
+        [
+            "Cashiering",
+            "Sales",
+            "Stocking",
+            "Customer Service",
+            "Inventory Management",
+            "Hospitality Industry"
+        ]
+    ],
+    "5": [
+        "Customer Service Representative",
+        "Circle K",
+        [
+            "Jan 2022 - Jul 2022",
+            "7 mos"
+        ],
+        [
+            "Galveston, Texas, United States",
+            "On-site"
+        ],
+        "Had the pleasure to meet many different people while brightening up their day and making sure the store was straightened up.",
+        "Skills:",
+        [
+            "Cashiering",
+            "Sales",
+            "Hospitality",
+            "Food & Beverage",
+            "Customer Service",
+            "Cleaning"
+        ]
+    ]
+}
