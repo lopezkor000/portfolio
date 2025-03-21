@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { WidthContext } from "./Context";
 
 interface ButtonProps {
   text: string;
@@ -23,11 +24,7 @@ const NavButton = (props: ButtonProps) => {
 };
 
 export default function NavBar() {
-  let [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, [setWidth]);
+  const width = useContext(WidthContext);
 
   return (
     <div
