@@ -1,6 +1,7 @@
 import Experiences from "@/components/Experiences";
 import InfoCard from "@/components/InfoCard";
 import ProjectCard from "@/components/ProjectCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,8 +18,6 @@ export default function Home() {
         title="About Me"
         subtitle="“It's hard to talk about yourself.” - Sugar Ray Leonard"
         pic="car.jpg"
-        reverse={false}
-        className="w-3/4"
       >
         <p>
           Was born and raised on Galveston Island, Texas into a Hispanic
@@ -53,9 +52,16 @@ export default function Home() {
         title="Experience"
         subtitle='"We are not what we know but what we are willing to learn." - Mary Catherine Bateson'
         pic="fly.jpg"
-        reverse={false}
-        className="w-3/4"
       >
+        <div>
+          <Link
+            href="/resume.pdf"
+            target="_blank"
+            className="text-yellow-300 hover:text-white"
+          >
+            PDF Resume
+          </Link>
+        </div>
         <Experiences />
       </InfoCard>
       <InfoCard
@@ -63,8 +69,6 @@ export default function Home() {
         title="Projects"
         subtitle='"How does a project get to be a year late? One day at a time." - Fred Brooks'
         pic="pi.jpg"
-        reverse={false}
-        className="w-3/4"
       >
         {/* <ExperienceList
           items={[
@@ -99,8 +103,6 @@ export default function Home() {
         title="Contact Me"
         subtitle='"Great communication begins with connection." - Oprah'
         pic="grad.jpg"
-        reverse={false}
-        className="w-3/4"
       >
         <div className="w-fit flex outline">
           <div className="w-fit place-items-end p-3 space-y-3 font-bold">

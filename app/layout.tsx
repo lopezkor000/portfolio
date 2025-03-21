@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import { HomePage } from "./HomePage";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} bg-zinc-900`}
       >
         <NavBar />
-        <div className="ps-36 m-5">{children}</div>
+        <HomePage children={children} />
       </body>
     </html>
   );
