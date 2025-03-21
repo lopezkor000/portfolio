@@ -23,7 +23,7 @@ for i, item in enumerate(exp):
   labeled["company"] = obj[i][1]
   labeled["when"] = obj[i][2]
   labeled["where"] = obj[i][3]
-  labeled["description"] = obj[i][4:-1]
+  labeled["description"] = obj[i][4:-2]
   labeled["skills"] = obj[i][-1]
 
   obj[i] = labeled
