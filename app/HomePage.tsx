@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { WidthContext } from "@/components/Context";
 
 interface Props {
   children: React.ReactNode;
@@ -8,11 +9,7 @@ interface Props {
 }
 
 export function HomePage(props: Props) {
-  let [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, [setWidth]);
+  const width = useContext(WidthContext);
 
   return (
     <div className={`${width > 500 && "ps-36"} mx-10`}>{props.children}</div>
