@@ -1,6 +1,12 @@
+"use client";
+
 import data from "@/data/experiences.json";
+import { useContext } from "react";
+import { WidthContext } from "./Context";
 
 export default function Experiences() {
+  const width = useContext(WidthContext);
+
   return (
     <div>
       {Object.entries(data).map(([key, exp]) => {
@@ -17,12 +23,18 @@ export default function Experiences() {
             </div>
             <div className="flex flex-col gap-3">
               {exp.description.map((desc) => {
-                return <p>{desc}</p>;
+                return <p key={desc}>{desc}</p>;
               })}
             </div>
-            <div className="columns-3 text-center">
+            <div
+              className={`${
+                width > 500 ? "columns-3" : "columns-2"
+              } text-center`}
+            >
               {exp.skills.map((skill) => (
-                <p key={skill}>{skill}</p>
+                <p key={skill} className="py-1">
+                  {skill}
+                </p>
               ))}
             </div>
           </div>
