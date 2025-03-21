@@ -1,4 +1,5 @@
 import ExperienceCard, { ExperienceList } from "@/components/ExperienceCard";
+import Experiences from "@/components/Experiences";
 import InfoCard from "@/components/InfoCard";
 import ProjectCard from "@/components/ProjectCard";
 
@@ -48,7 +49,7 @@ export default function Home() {
           similar position.
         </p>
       </InfoCard>
-      <InfoCard
+      {/* <InfoCard
         id="Experience"
         title="Experience"
         subtitle='"We are not what we know but what we are willing to learn." - Mary Catherine Bateson'
@@ -226,6 +227,16 @@ export default function Home() {
             ]}
           />
         </ExperienceCard>
+      </InfoCard> */}
+      <InfoCard
+        id="Experience"
+        title="Experience"
+        subtitle='"We are not what we know but what we are willing to learn." - Mary Catherine Bateson'
+        pic="fly.jpg"
+        reverse={false}
+        className="w-3/4"
+      >
+        <Experiences />
       </InfoCard>
       <InfoCard
         id="Projects"
