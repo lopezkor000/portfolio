@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+export const runtime = "edge";
+
 export async function GET() {
   // let response = {};
   try {
@@ -9,7 +11,7 @@ export async function GET() {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env.TOKEN}`,
+          Authorization: `Bearer ${process.env.token}`,
         },
       }
     );
@@ -24,7 +26,7 @@ export async function GET() {
       };
     });
 
-    return NextResponse.json(projects);
+    return NextResponse.json({ projects: projects, status: 200 });
   } catch {
     return NextResponse.json(
       { message: "cant connect to github" },
