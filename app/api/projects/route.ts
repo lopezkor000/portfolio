@@ -3,7 +3,6 @@ import { NextResponse } from "next/server";
 export const runtime = "edge";
 
 export async function GET() {
-  // let response = {};
   try {
     const response = await fetch(
       "https://api.github.com/users/lopezkor000/repos?sort=pushed",

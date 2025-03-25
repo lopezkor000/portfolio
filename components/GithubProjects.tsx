@@ -10,8 +10,6 @@ export function GithubProjects() {
       method: "GET",
     }).then((response) => {
       response.json().then((data) => {
-        // if (data.status != 200) return setProjects(data.status);
-        console.log(data.status);
         setProjects({
           status: Number(data.status),
           data: data.projects.slice(0, 5),
@@ -19,8 +17,6 @@ export function GithubProjects() {
       });
     });
   }, []);
-
-  // console.log(projects);
 
   return (
     <div>
