@@ -1,4 +1,5 @@
 import Experiences from "@/components/Experiences";
+import { GithubProjects } from "@/components/GithubProjects";
 import InfoCard from "@/components/InfoCard";
 import ProjectCard from "@/components/ProjectCard";
 import Link from "next/link";
@@ -82,6 +83,7 @@ export default function Home() {
             "Senior Project",
           ]}
         /> */}
+        <GithubProjects />
         <ProjectCard
           title="NAS"
           purp="Keep personal device storages clear while sharing files. This helps keep projects and important files accessible from anywhere when working with my Pi VPN."
