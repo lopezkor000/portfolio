@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex flex-col space-y-20 items-center">
       <div className="fixed flex space-x-3 items-center bg-zinc-900 p-3 rounded-lg">
-        <img src="stairway.jpg" className="w-10 h-10 rounded-full" />
+        <img src="stairway.webp" className="w-10 h-10 rounded-full" />
         <div>
           <p className="font-bold">Koriel Lopez</p>
           <p className="text-zinc-400">Software Engineer</p>
@@ -18,7 +18,7 @@ export default function Home() {
         id="About Me"
         title="About Me"
         subtitle="“It's hard to talk about yourself.” - Sugar Ray Leonard"
-        pic="car.jpg"
+        pic="car.webp"
       >
         <p>
           Was born and raised on Galveston Island, Texas into a Hispanic
@@ -52,7 +52,7 @@ export default function Home() {
         id="Experience"
         title="Experience"
         subtitle='"We are not what we know but what we are willing to learn." - Mary Catherine Bateson'
-        pic="fly.jpg"
+        pic="fly.webp"
       >
         <div>
           <Link
@@ -69,7 +69,7 @@ export default function Home() {
         id="Projects"
         title="Projects"
         subtitle='"How does a project get to be a year late? One day at a time." - Fred Brooks'
-        pic="pi.jpg"
+        pic="pi.webp"
       >
         {/* <ExperienceList
           items={[
@@ -104,7 +104,7 @@ export default function Home() {
         id="Contact Me"
         title="Contact Me"
         subtitle='"Great communication begins with connection." - Oprah'
-        pic="grad.jpg"
+        pic="grad.webp"
       >
         <div className="w-fit flex outline">
           <div className="w-fit place-items-end p-3 space-y-3 font-bold">
