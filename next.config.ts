@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   env: {
-    token: process.env.TOKEN,
+    TOKEN: process.env.TOKEN,
   },
 };
 

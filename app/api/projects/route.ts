@@ -10,7 +10,7 @@ export async function GET() {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env.token}`,
+          Authorization: `Bearer ${process.env.TOKEN}`,
         },
       }
     );
