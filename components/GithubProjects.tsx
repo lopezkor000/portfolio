@@ -20,7 +20,7 @@ export function GithubProjects() {
 
   return (
     <div>
-      <p className="text-xl font-bold">5 Recently Pushed GitHub Projects</p>
+      <p className="text-xl font-bold my-3">Recent GitHub Projects</p>
       <ul className="w-fit">
         {projects.status == 200 ? (
           projects.data.map((project: any) => {

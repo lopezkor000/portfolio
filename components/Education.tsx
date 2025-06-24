@@ -14,9 +14,9 @@ export default function Education(props: Props) {
       {props.coursework && (
         <>
           <p className="my-3">Coursework:</p>
-          <div className="columns-3">
+          <div className="md:columns-3 text-base/7">
             {props.coursework.map((course) => (
-              <p>{course}</p>
+              <p key={course}>{course}</p>
             ))}
           </div>
         </>
