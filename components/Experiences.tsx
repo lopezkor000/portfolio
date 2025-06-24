@@ -1,12 +1,6 @@
-"use client";
-
 import data from "@/data/experiences.json";
-import { useContext } from "react";
-import { WidthContext } from "./Context";
 
 export default function Experiences() {
-  const width = useContext(WidthContext);
-
   return (
     <div>
       {Object.entries(data).map(([key, exp]) => {
@@ -26,11 +20,7 @@ export default function Experiences() {
                 return <p key={desc}>{desc}</p>;
               })}
             </div>
-            <div
-              className={`${
-                width > 500 ? "columns-3" : "columns-2"
-              } text-center`}
-            >
+            <div className="md:columns-3 columns-2 text-center">
               {exp.skills.map((skill) => (
                 <p key={skill} className="py-1">
                   {skill}

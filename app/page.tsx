@@ -1,3 +1,4 @@
+import Education from "@/components/Education";
 import Experiences from "@/components/Experiences";
 import { GithubProjects } from "@/components/GithubProjects";
 import InfoCard from "@/components/InfoCard";
@@ -6,9 +7,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col space-y-20 items-center">
+    <main className="flex flex-col space-y-20 items-center sm:w-1/2">
       <div className="fixed flex space-x-3 items-center bg-zinc-900 p-3 rounded-lg">
-        <img src="stairway.jpg" className="w-10 h-10 rounded-full" />
+        <img src="stairway.webp" className="w-10 h-10 rounded-full" />
         <div>
           <p className="font-bold">Koriel Lopez</p>
           <p className="text-zinc-400">Software Engineer</p>
@@ -18,7 +19,7 @@ export default function Home() {
         id="About Me"
         title="About Me"
         subtitle="“It's hard to talk about yourself.” - Sugar Ray Leonard"
-        pic="car.jpg"
+        pic="car.webp"
       >
         <p>
           Was born and raised on Galveston Island, Texas into a Hispanic
@@ -49,10 +50,46 @@ export default function Home() {
         </p>
       </InfoCard>
       <InfoCard
+        id="Education"
+        title="Education"
+        subtitle='"I have no special talent. I am only passionately curious." - Albert Einstein'
+        pic="utrgv.png"
+      >
+        <Education
+          degree="Master of Science in Computer Science"
+          where="University of Texas Rio Grande Valley"
+          when="August 2025 - May 2027"
+        />
+        <Education
+          degree="Bachelor of Science in Computer Science"
+          where="University of Texas Rio Grande Valley"
+          when="August 2023 - May 2025"
+          coursework={[
+            "Algorithms & Data Structures",
+            "Mathematical Foundation of CS",
+            "Obj Oriented Prog in Python",
+            "Prog in UNIX/Linux Env",
+            "Software Engineering I & II",
+            "Organization of Program Lang",
+            "Web Development",
+            "TopCS: UX/UI Programming",
+            "Automata Formal Lang & Comp",
+            "Database Design & Implement",
+            "Computer Networks",
+            "Intro to Data Science",
+          ]}
+        />
+        <Education
+          degree="Associate of Science in Computer Science"
+          where="Galveston College"
+          when="August 2021 - July 2023"
+        />
+      </InfoCard>
+      <InfoCard
         id="Experience"
         title="Experience"
         subtitle='"We are not what we know but what we are willing to learn." - Mary Catherine Bateson'
-        pic="fly.jpg"
+        pic="fly.webp"
       >
         <div>
           <Link
@@ -69,7 +106,7 @@ export default function Home() {
         id="Projects"
         title="Projects"
         subtitle='"How does a project get to be a year late? One day at a time." - Fred Brooks'
-        pic="pi.jpg"
+        pic="pi.webp"
       >
         {/* <ExperienceList
           items={[
@@ -104,7 +141,7 @@ export default function Home() {
         id="Contact Me"
         title="Contact Me"
         subtitle='"Great communication begins with connection." - Oprah'
-        pic="grad.jpg"
+        pic="grad.webp"
       >
         <div className="w-fit flex outline">
           <div className="w-fit place-items-end p-3 space-y-3 font-bold">

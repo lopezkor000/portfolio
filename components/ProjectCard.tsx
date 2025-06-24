@@ -20,7 +20,7 @@ export default function ProjectCard(props: ProjectCardProps) {
         <div className="text-lg italic underline">Implementation</div>
         <p>{props.impl}</p>
       </div>
-      <div className="columns-3">
+      <div className="md:columns-3 columns-2">
         {props.learn.map((skill) => (
           <p key={skill}>{skill}</p>
         ))}
