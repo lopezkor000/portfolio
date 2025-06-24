@@ -1,8 +1,5 @@
 "use client";
 
-import { useContext } from "react";
-import { WidthContext } from "./Context";
-
 interface ButtonProps {
   text: string;
 }
@@ -24,15 +21,10 @@ const NavButton = (props: ButtonProps) => {
 };
 
 export default function NavBar() {
-  const width = useContext(WidthContext);
-
   return (
-    <div
-      className={`fixed flex flex-col w-36 h-full rounded-r-lg bg-black space-y-5 pt-5 ${
-        width < 500 && "hidden"
-      }`}
-    >
+    <div className="fixed flex flex-col w-36 h-full rounded-r-lg bg-black space-y-5 pt-5 invisible md:visible">
       <NavButton text="About Me" />
+      <NavButton text="Education" />
       <NavButton text="Experience" />
       <NavButton text="Projects" />
       <NavButton text="Contact Me" />

@@ -1,3 +1,4 @@
+import Education from "@/components/Education";
 import Experiences from "@/components/Experiences";
 import { GithubProjects } from "@/components/GithubProjects";
 import InfoCard from "@/components/InfoCard";
@@ -6,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col space-y-20 items-center">
+    <main className="flex flex-col space-y-20 items-center sm:w-1/2">
       <div className="fixed flex space-x-3 items-center bg-zinc-900 p-3 rounded-lg">
         <img src="stairway.webp" className="w-10 h-10 rounded-full" />
         <div>
@@ -47,6 +48,42 @@ export default function Home() {
           decisions, which is why I want to provide that guidance to those in a
           similar position.
         </p>
+      </InfoCard>
+      <InfoCard
+        id="Education"
+        title="Education"
+        subtitle='"I have no special talent. I am only passionately curious." - Albert Einstein'
+        pic="utrgv.png"
+      >
+        <Education
+          degree="Master of Science in Computer Science"
+          where="University of Texas Rio Grande Valley"
+          when="August 2025 - May 2027"
+        />
+        <Education
+          degree="Bachelor of Science in Computer Science"
+          where="University of Texas Rio Grande Valley"
+          when="August 2023 - May 2025"
+          coursework={[
+            "Algorithms & Data Structures",
+            "Mathematical Foundation of CS",
+            "Obj Oriented Prog in Python",
+            "Prog in UNIX/Linux Env",
+            "Software Engineering I & II",
+            "Organization of Program Lang",
+            "Web Development",
+            "TopCS: UX/UI Programming",
+            "Automata Formal Lang & Comp",
+            "Database Design & Implement",
+            "Computer Networks",
+            "Intro to Data Science",
+          ]}
+        />
+        <Education
+          degree="Associate of Science in Computer Science"
+          where="Galveston College"
+          when="August 2021 - July 2023"
+        />
       </InfoCard>
       <InfoCard
         id="Experience"
