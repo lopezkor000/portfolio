@@ -1,23 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import { promises as fs } from "fs";
 
-const test = `
-# title
-1. list
-2. list
-3. list
-
-### smaller title
-- ul
-- ul
-
-*italic*
-**bold**
-`;
-
 export default async function Blog() {
-  console.log("Reloading blogs");
-
   const base = "./app/blog/_blogs/";
 
   let blogs = [];
@@ -27,12 +11,13 @@ export default async function Blog() {
     blogs.push(data);
   }
 
-  console.log(blogs);
-
   return (
-    <div className="flex flex-col gap-20 my-10">
+    <div className="flex flex-col gap-20 my-10 md:w-1/2">
       {blogs.map((blog) => (
-        <div key={blog} className="flex flex-col gap-5 border rounded-xl p-10">
+        <div
+          key={blog}
+          className="flex flex-col gap-5 border border-2 rounded-xl p-7 md:p-10"
+        >
           <ReactMarkdown
             components={{
               h1: ({ node, ...props }) => (
@@ -49,7 +34,7 @@ export default async function Blog() {
               ),
               code: ({ node, ...props }) => (
                 <code
-                  className="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6"
+                  className="text-base inline-flex text-wrap items-center bg-gray-800 text-white rounded-lg p-2 md:p-5"
                   {...props}
                 />
               ),
