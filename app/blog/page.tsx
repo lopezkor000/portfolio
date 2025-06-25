@@ -5,19 +5,20 @@ export default async function Blog() {
   const base = "./app/blog/_blogs/";
 
   let blogs = [];
-  const files = await fs.readdir(base);
+  const files = (await fs.readdir(base)).filter((file) => file != ".obsidian");
   for (let file of files) {
     const data = (await fs.readFile(base + file)).toString();
-    blogs.push(data);
+    blogs.push({ date: file.substring(0, file.length - 3), content: data });
   }
 
   return (
     <div className="flex flex-col gap-20 my-10 md:w-1/2">
       {blogs.map((blog) => (
         <div
-          key={blog}
+          key={blog.date}
           className="flex flex-col gap-5 border border-2 rounded-xl p-7 md:p-10"
         >
+          <p className="text-right text-lg">{blog.date}</p>
           <ReactMarkdown
             components={{
               h1: ({ node, ...props }) => (
@@ -34,7 +35,7 @@ export default async function Blog() {
               ),
               code: ({ node, ...props }) => (
                 <code
-                  className="text-base inline-flex text-wrap items-center bg-gray-800 text-white rounded-lg p-2 md:p-5"
+                  className="text-base inline-flex text-wrap items-center bg-gray-800 text-white rounded-lg px-2 md:px-5"
                   {...props}
                 />
               ),
@@ -44,10 +45,14 @@ export default async function Blog() {
                   {...props}
                 />
               ),
+              p: ({ node, ...props }) => (
+                <p className="text-base/8" {...props} />
+              ),
             }}
           >
-            {blog}
+            {blog.content}
           </ReactMarkdown>
+          <p className="text-lg">Cheers!</p>
         </div>
       ))}
     </div>
