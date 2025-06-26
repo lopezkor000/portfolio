@@ -1,4 +1,5 @@
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { promises as fs } from "fs";
 
 export default async function Blog() {
@@ -20,6 +21,7 @@ export default async function Blog() {
         >
           <p className="text-right text-lg">{blog.date}</p>
           <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
             components={{
               h1: ({ node, ...props }) => (
                 <h1 className="text-5xl" {...props} />
@@ -47,6 +49,12 @@ export default async function Blog() {
               ),
               p: ({ node, ...props }) => (
                 <p className="text-base/8" {...props} />
+              ),
+              img: ({ node, ...props }) => (
+                <img
+                  className="w-96 h-96 rounded-xl justify-self-center"
+                  {...props}
+                />
               ),
             }}
           >
