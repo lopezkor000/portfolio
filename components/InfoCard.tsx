@@ -11,7 +11,7 @@ export default function InfoCard(props: Props) {
   return (
     <div
       id={props.id}
-      className="flex flex-col xl:flex-row gap-10 items-center pb-10 w-full px-3"
+      className="flex flex-col xl:flex-row gap-10 items-center md:items-start pb-10 w-full px-3"
     >
       <img src={props.pic} className="size-60 aspect-square rounded-lg" />
       <div className="flex flex-col space-y-3">
