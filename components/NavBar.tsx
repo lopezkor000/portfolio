@@ -13,7 +13,15 @@ const NavButton = (props: ButtonProps) => {
   return (
     <button
       className="text-yellow-300 bg-zinc-800 w-32 h-8 rounded-e hover:text-white"
-      onClick={() => scrollToContent(props.text)}
+      onClick={() => {
+        const start = location.href.indexOf("/", 7);
+        if (
+          location.href.slice(start) !== "/" &&
+          location.href.slice(start, start + 2) !== "/#"
+        )
+          location.href = `/#${props.text}`;
+        else scrollToContent(props.text);
+      }}
     >
       {props.text}
     </button>
@@ -23,11 +31,21 @@ const NavButton = (props: ButtonProps) => {
 export default function NavBar() {
   return (
     <div className="fixed flex flex-col w-36 h-full rounded-r-lg bg-black space-y-5 pt-5 invisible md:visible">
-      <NavButton text="About Me" />
-      <NavButton text="Education" />
-      <NavButton text="Experience" />
-      <NavButton text="Projects" />
-      <NavButton text="Contact Me" />
+      <div className="grow flex flex-col space-y-5">
+        <NavButton text="About Me" />
+        <NavButton text="Education" />
+        <NavButton text="Experience" />
+        <NavButton text="Projects" />
+        <NavButton text="Contact Me" />
+      </div>
+      <div className="py-10">
+        <a
+          href="/blog"
+          className="flex justify-center items-center text-yellow-300 bg-zinc-800 w-32 h-8 rounded-e hover:text-white"
+        >
+          Blog
+        </a>
+      </div>
     </div>
   );
 }
