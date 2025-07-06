@@ -1,25 +1,32 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { promises as fs } from "fs";
+import PocketBase from "pocketbase";
+
+const pb = new PocketBase("https://db.koriel.net");
+const blogsDB = pb.collection("blogs");
 
 export default async function Blog() {
-  const base = "./app/blog/_blogs/";
+  // const base = "./app/blog/_blogs/";
 
-  let blogs = [];
-  const files = (await fs.readdir(base)).filter((file) => file != ".obsidian");
-  for (let file of files) {
-    const data = (await fs.readFile(base + file)).toString();
-    blogs.push({ date: file.substring(0, file.length - 3), content: data });
-  }
+  // let blogs = [];
+  // const files = (await fs.readdir(base)).filter((file) => file != ".obsidian");
+  // for (let file of files) {
+  //   const data = (await fs.readFile(base + file)).toString();
+  //   blogs.push({ date: file.substring(0, file.length - 3), content: data });
+  // }
+
+  const blogs = await blogsDB.getFullList();
 
   return (
     <div className="flex flex-col gap-20 my-10 md:w-1/2">
       {blogs.map((blog) => (
         <div
-          key={blog.date}
+          key={blog.id}
+          id={blog.id}
           className="flex flex-col gap-5 border border-2 rounded-xl p-7 md:p-10"
         >
-          <p className="text-right text-lg">{blog.date}</p>
+          <p className="text-right text-lg">{blog.title}</p>
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
@@ -58,7 +65,7 @@ export default async function Blog() {
               ),
             }}
           >
-            {blog.content}
+            {blog.body}
           </ReactMarkdown>
           <p className="text-lg">Cheers!</p>
         </div>
