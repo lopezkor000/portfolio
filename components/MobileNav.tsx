@@ -32,7 +32,13 @@ function MobileNavButton(props: ButtonProps) {
           location.href.slice(start, start + 2) !== "/#"
         )
           location.href = `/#${props.text}`;
-        else scrollToContent(props.text);
+        else {
+          const node = document.getElementById(props.text);
+          window.scroll({
+            top: node ? node.offsetTop - 100 : 0,
+            behavior: "smooth",
+          });
+        }
       }}
     >
       {props.text}
