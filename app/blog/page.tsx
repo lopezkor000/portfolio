@@ -1,21 +1,11 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { promises as fs } from "fs";
 import PocketBase from "pocketbase";
 
 const pb = new PocketBase("https://db.koriel.net");
 const blogsDB = pb.collection("blogs");
 
 export default async function Blog() {
-  // const base = "./app/blog/_blogs/";
-
-  // let blogs = [];
-  // const files = (await fs.readdir(base)).filter((file) => file != ".obsidian");
-  // for (let file of files) {
-  //   const data = (await fs.readFile(base + file)).toString();
-  //   blogs.push({ date: file.substring(0, file.length - 3), content: data });
-  // }
-
   const blogs = await blogsDB.getFullList();
 
   return (
