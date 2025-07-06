@@ -26,19 +26,13 @@ function MobileNavButton(props: ButtonProps) {
       className="text-yellow-300 bg-zinc-800 w-64 h-12 rounded hover:text-white"
       onClick={() => {
         props.setOpen(false);
-        const start = location.href.indexOf("/", 7);
+        const start = location.href.indexOf("/", 10);
         if (
           location.href.slice(start) !== "/" &&
           location.href.slice(start, start + 2) !== "/#"
         )
           location.href = `/#${props.text}`;
-        else {
-          const node = document.getElementById(props.text);
-          window.scroll({
-            top: node ? node.offsetTop - 100 : 0,
-            behavior: "smooth",
-          });
-        }
+        else scrollToContent(props.text);
       }}
     >
       {props.text}

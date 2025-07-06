@@ -16,19 +16,13 @@ const NavButton = (props: ButtonProps) => {
     <button
       className="text-yellow-300 bg-zinc-800 w-32 h-8 rounded-e hover:text-white"
       onClick={() => {
-        const start = location.href.indexOf("/", 7);
+        const start = location.href.indexOf("/", 10);
         if (
           location.href.slice(start) !== "/" &&
           location.href.slice(start, start + 2) !== "/#"
         )
           location.href = `/#${props.text}`;
-        else {
-          const node = document.getElementById(props.text);
-          window.scroll({
-            top: node ? node.offsetTop - 100 : 0,
-            behavior: "smooth",
-          });
-        }
+        else scrollToContent(props.text);
       }}
     >
       {props.text}
