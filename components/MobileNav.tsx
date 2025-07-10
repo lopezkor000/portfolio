@@ -86,7 +86,7 @@ export default function MobileNav(props: Props) {
                       Navigation
                     </DialogTitle>
                   </div> */}
-                  <div className="h-full relative mt-6 flex flex-col justify-between px-4 sm:px-6">
+                  <div className="h-full relative flex flex-col gap-12 justify-between px-4 sm:px-6">
                     <div className="flex flex-col gap-5 items-center">
                       {props.navs.map((text) => (
                         <MobileNavButton
@@ -99,7 +99,7 @@ export default function MobileNav(props: Props) {
                     <div className="flex justify-center">
                       <a
                         href="/blog"
-                        className="flex justify-center items-center text-yellow-300 bg-zinc-800 w-64 h-12 rounded hover:text-white"
+                        className="flex justify-center items-center text-zinc-800 font-bold bg-yellow-300 w-64 h-12 rounded hover:text-white"
                       >
                         Blog
                       </a>

@@ -44,7 +44,7 @@ export default function NavBar() {
         <div className="py-10">
           <a
             href="/blog"
-            className="flex justify-center items-center text-yellow-300 bg-zinc-800 w-32 h-8 rounded-e hover:text-white"
+            className="flex justify-center items-center text-zinc-800 font-bold bg-yellow-300 w-32 h-8 rounded-e hover:text-white"
           >
             Blog
           </a>
