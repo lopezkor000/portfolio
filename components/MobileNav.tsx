@@ -99,7 +99,7 @@ export default function MobileNav(props: Props) {
                     <div className="flex justify-center">
                       <a
                         href="/blog"
-                        className="flex justify-center items-center text-zinc-800 font-bold bg-yellow-300 w-64 h-12 rounded hover:text-white"
+                        className="flex justify-center items-center text-zinc-800 font-bold bg-yellow-300 w-64 h-12 rounded hover:text-zinc-600"
                       >
                         Blog
                       </a>
