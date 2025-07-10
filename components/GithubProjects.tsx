@@ -6,16 +6,20 @@ export function GithubProjects() {
   const [projects, setProjects] = useState({ status: 200, data: [] });
 
   useEffect(() => {
-    fetch("/api/projects", {
-      method: "GET",
-    }).then((response) => {
-      response.json().then((data) => {
-        setProjects({
-          status: Number(data.status),
-          data: data.projects.slice(0, 5),
+    try {
+      fetch("/api/projects", {
+        method: "GET",
+      }).then((response) => {
+        response.json().then((data) => {
+          setProjects({
+            status: Number(data.status),
+            data: data.projects ? data.projects.slice(0, 5) : [],
+          });
         });
       });
-    });
+    } catch {
+      setProjects({ status: 500, data: [] });
+    }
   }, []);
 
   return (
