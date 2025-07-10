@@ -51,9 +51,9 @@ export default function MobileNav(props: Props) {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="rounded-md px-2.5 py-1.5 text-white"
+        className="rounded-bl-md px-2.5 py-1.5 bg-zinc-800"
       >
-        <Bars3Icon className="text-white size-10" />
+        <Bars3Icon className="text-yellow-300 size-10" />
       </button>
       <Dialog open={open} onClose={setOpen} className="relative z-10">
         <DialogBackdrop
