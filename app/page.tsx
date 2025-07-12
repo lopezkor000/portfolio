@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col space-y-20 items-center md:w-1/2">
+    <main className="flex flex-col space-y-20 items-center lg:w-3/4 lg:px-36">
       <div className="fixed flex space-x-3 items-center bg-zinc-900 p-3 rounded-lg">
         <img src="stairway.webp" className="w-10 h-10 rounded-full" />
         <div>

@@ -9,7 +9,7 @@ export default async function Blog() {
   const blogs = await blogsDB.getFullList();
 
   return (
-    <div className="flex flex-col gap-20 my-10 md:w-1/2">
+    <div className="flex flex-col gap-20 my-10 lg:w-3/4 lg:px-36">
       {blogs.map((blog) => (
         <div
           key={blog.id}

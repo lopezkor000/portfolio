@@ -33,9 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} bg-zinc-900`}
       >
         <NavBar />
-        <div className="flex justify-center mx-2 md:mx-10 md:pl-36">
-          {children}
-        </div>
+        <div className="flex justify-center mx-2 md:pl-36">{children}</div>
       </body>
     </html>
   );
