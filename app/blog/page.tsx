@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import PocketBase from "pocketbase";
@@ -7,6 +9,8 @@ const blogsDB = pb.collection("blogs");
 
 export default async function Blog() {
   const blogs = await blogsDB.getFullList();
+
+  blogs.reverse();
 
   return (
     <div className="flex flex-col gap-20 my-10 lg:w-3/4 lg:px-36">
