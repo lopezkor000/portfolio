@@ -45,6 +45,7 @@ export default async function Blog() {
               a: ({ node, ...props }) => (
                 <a
                   className="text-yellow-300 hover:text-white hover:decoration-yellow-200 hover:underline"
+                  target="#"
                   {...props}
                 />
               ),
